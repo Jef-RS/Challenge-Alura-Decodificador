@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Decodificador Alura</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.svg" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section class="escrita">
+            <textarea id="decoder-area" cols="30" rows="4" placeholder="Digite seu texto aqui"></textarea>
+
+            <div class="informacoes">
+                <img src="imagens/alerta.svg" alt="Icone alertando que só pode colocar letras minúsculas e sem acento">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+                
+            <div class="botoes">
+                <button id="cripto-button">Criptografar</button>
+                <button id="descripto-button">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="visualizacao">
+            <div class="output-area">
+                <textarea  id="output-view" cols="30" rows="10"></textarea>
+                <button id="copy">Copiar</button>
+            </div>
+
+            <div id="remover-imagem" class="conteudo">
+                <img src="imagens/menino-lupa.svg" alt="Imagem de um menino segurando uma lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Challenge Decodificador Alura - by: <a href="https://github.com/jef-rs" target="_blank"><img src="imagens/GitHub_logo.png"> Jeferson-RS</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
