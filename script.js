@@ -48,6 +48,7 @@ function Descriptografar() {
     output.innerHTML = descriptografar;
 
     if(areaDeEscrita.value == ""){
+        botaoCopiar.style.display = "none";
         output.style.display = "none";
         removerImagem.style.display = "block";
     }
