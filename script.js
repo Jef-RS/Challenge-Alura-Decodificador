@@ -7,6 +7,7 @@ var removerImagem = document.getElementById("remover-imagem");
 
 function Criptografar() {
     var texto = areaDeEscrita.value.toLowerCase();
+    var textoSemAcento = texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
     removerImagem.style.display = "none";
 
@@ -15,7 +16,7 @@ function Criptografar() {
     output.style.color = "#0A3871"
     output.style.fontSize = "18px"
 
-    var criptografar = texto.replace(/e/g, "enter")
+    var criptografar = textoSemAcento.replace(/e/g, "enter")
     .replace(/i/g, "imes")
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
